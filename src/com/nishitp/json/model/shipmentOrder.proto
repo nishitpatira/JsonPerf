@@ -1,0 +1,16 @@
+syntax = "proto3";
+package NishitDemo;
+ 
+message ShipmentOrders {
+	int64 shipmentId = 1;
+	string shourceWarehouse = 2;
+	string destinationWarehouse = 3;
+	
+	int32 noOfItems = 5;
+	int64 orderId = 6;
+	string sellerName = 7;
+	int64 sellerId = 8;
+	int64 customerId = 9;
+	bool priority = 10;
+     
+}

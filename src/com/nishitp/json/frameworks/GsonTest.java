@@ -27,7 +27,7 @@ import com.nishitp.json.model.UserHistory;
 @Fork(warmups = 1, value = 3)
 public class GsonTest {
 
-	@Benchmark
+	/*@Benchmark
 	public void Gson_Tweet_ToJson(GsonState gsonState, TweetState state, Blackhole blackhole) {
 		String jsonString = gsonState.GSON.toJson(state.tweet);
 		blackhole.consume(jsonString);
@@ -139,5 +139,5 @@ public class GsonTest {
 	public void moshi_UserHistory_toObject(UserState state, Blackhole blackhole) throws Exception {
 		UserHistory userHistory = MoshiState.userHistoryAdapter.fromJson(state.moshi_json);
 		blackhole.consume(userHistory);
-	}
+	}*/
 }
